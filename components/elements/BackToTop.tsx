@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import { useEffect, useState } from "react";
 
 export default function BackToTop({ target }: any) {
@@ -21,6 +21,7 @@ export default function BackToTop({ target }: any) {
   const handleClick = () => {
     window.scrollTo({
       top: document.querySelector(target).offsetTop,
+      left: 0,
       behavior: "smooth",
     });
   };
